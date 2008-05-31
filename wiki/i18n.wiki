@@ -7,7 +7,7 @@ You will find below the main commands I make the assumption that `make-messages.
 $ make-messages.py -l <LANGUAGE_CODE>
 processing language <LANGUAGE_CODE>
 }}}
-This command creates the message file for the new language. It should be run from `survey` directory. It creates a folder there :  `survey/locale/de/LC_MESSAGES/django.po`
+This command creates the message file for the new language. It should be run from `survey` directory. It creates a folder there :  `survey/locale/<LANGUAGE_CODE>/LC_MESSAGES/django.po` where <LANGUAGE_CODE> can be : en, fr,de, ...
 
 
 ==Updating the message files==
