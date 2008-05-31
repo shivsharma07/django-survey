@@ -1,0 +1,25 @@
+=Internationalization=
+A detailled page explaining how to intrnationalized a django application can be found there : http://www.djangoproject.com/documentation/i18n/ you can also find some information in the django book : http://www.djangobook.com/en/1.0/chapter18/
+You will find below the main commands I make the assumption that `make-messages.py` and `compile-messages.py` are in your PATH, they are located in `django/bin`.
+
+==Adding a new language==
+{{{
+$ make-messages.py -l <LANGUAGE_CODE>
+processing language <LANGUAGE_CODE>
+}}}
+This command creates the message file for the new language. It should be run from `survey` directory. It creates a folder there :  `survey/locale/de/LC_MESSAGES/django.po`
+
+
+==Updating the message files==
+{{{
+$ make-messages.py -a
+processing language fr
+processing language en
+}}}
+In the example above the system has updated the fr (French) and en (English) message files. This command should be run each time you had a string that needs to be translated.
+
+==Compiling the messages==
+{{{
+$ compile-messages.py --settings="examples.settings"
+}}}
+Each time you make changes to the file containing the messages `.po`, you’ll need to compile them into a more efficient form, for use by gettext, this is done by using `compile-messages.py`. Before running this command you need to be sure that you have defined the environment variable : `DJANGO_SETTINGS_MODULE` else you can explicately specify the Python path to settings module. 
