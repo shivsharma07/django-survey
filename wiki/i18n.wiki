@@ -1,3 +1,4 @@
+#labels Featured
 =Internationalization=
 A detailled page explaining how to intrnationalized a django application can be found there : http://www.djangoproject.com/documentation/i18n/ you can also find some information in the django book : http://www.djangobook.com/en/1.0/chapter18/
 You will find below the main commands I make the assumption that `make-messages.py` and `compile-messages.py` are in your PATH, they are located in `django/bin`.
