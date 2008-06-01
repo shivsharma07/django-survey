@@ -1,4 +1,5 @@
 #summary How to get it, and what to do when you've got it.
+#labels Featured
 
 =Pre-requisite=
  You need to run this application using the latest trunk of Django, see: [http://www.djangoproject.com/download/].
