@@ -5,7 +5,7 @@ You will find below the main commands I make the assumption that `make-messages.
 
 ==Directory structure==
 You will find bellow the subset of the `django-survey` that is related to the internationalization. In the case our case the reusable web application is `survey`, that is what you probably want to reuse in your project. We are providing it bundle with an example of project called : `examples`. Note that the locale directory is in `survey` not `examples`.
-
+{{{
 |-- django-survey.kpf
 |-- examples
 |   |-- settings.py
@@ -19,7 +19,7 @@ You will find bellow the subset of the `django-survey` that is related to the in
 |   |       `-- LC_MESSAGES
 |   |           |-- django.mo
 |   |           `-- django.po
-
+}}}
 ==Adding a new language==
 {{{
 survey$ make-messages.py -l <LANGUAGE_CODE>
