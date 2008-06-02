@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Customization
 #labels Featured
 
 =Customized the Survey style =
