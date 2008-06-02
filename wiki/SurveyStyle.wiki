@@ -73,5 +73,6 @@ Will give you the following html:
         [Choice 2]
          ........
 </div> 
-This make the assumption that the style applied to this page will take care of hadling this case.
 }}}
+
+This make the assumption that the style applied to this page will take care of hadling this case.
