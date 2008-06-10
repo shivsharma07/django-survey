@@ -2,9 +2,13 @@
 
 = How to use django-survey with Pinax=
 
-django-survey can be integrated easily into [ django-hotclub http://code.google.com/p/django-hotclub/].
+django-survey can be integrated easily into [http://code.google.com/p/django-hotclub/ django-hotclub].
 You can now from a tribe answer the related survey and add/update/delete Survey/Question/Choice.
 
-= Details =
+= Step by step =
+
+1. Download the patch to django-hotclub and apply it attached [http://code.google.com/p/django-survey/issues/detail?id=11 there]
+2. Download the [http://code.google.com/p/django-survey/issues/detail?id=11 templates] and unzip them into django-hotclub's template directory
+3. Checkout django-survey : svn checkout https://django-survey.googlecode.com/svn/trunk/survey inside the 
 
 I
