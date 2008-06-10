@@ -1,0 +1,10 @@
+#summary step by step procedure to use django-survey in Pinax hotclubdefrance.
+
+= How to use django-survey with Pinax=
+
+django-survey can be integrated easily into [ django-hotclub http://code.google.com/p/django-hotclub/].
+You can now from a tribe answer the related survey and add/update/delete Survey/Question/Choice.
+
+= Details =
+
+I
