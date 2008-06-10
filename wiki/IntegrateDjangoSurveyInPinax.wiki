@@ -7,8 +7,10 @@ You can now from a tribe answer the related survey and add/update/delete Survey/
 
 = Step by step =
 
-1. Download the patch to django-hotclub and apply it attached [http://code.google.com/p/django-survey/issues/detail?id=11 there]
-2. Download the [http://code.google.com/p/django-survey/issues/detail?id=11 templates] and unzip them into django-hotclub's template directory
-3. Checkout django-survey : svn checkout https://django-survey.googlecode.com/svn/trunk/survey inside the 
+ # Download the patch to django-hotclub and apply it attached [http://code.google.com/p/django-survey/issues/detail?id=11 there]
+ # Download the [http://code.google.com/p/django-survey/issues/detail?id=11 templates] and unzip them into django-hotclub's template directory
+ # Checkout django-survey : svn checkout https://django-survey.googlecode.com/svn/trunk/survey inside the directory called Pinax in django-hotclub
 
-I
+
+That all you are now ready to go.
+--yml
