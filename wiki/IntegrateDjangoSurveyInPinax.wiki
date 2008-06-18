@@ -1,4 +1,5 @@
 #summary step by step procedure to use django-survey in Pinax hotclubdefrance.
+#labels Featured
 
 = How to use django-survey with Pinax=
 
