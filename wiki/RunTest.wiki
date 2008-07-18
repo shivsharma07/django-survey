@@ -44,10 +44,36 @@ Destroying test database...
 }}}
 
 == Coverage ==
-This [http://www.slideshare.net/guest18915c/an-app-in-a-week/ presentation] give a recipe to evaluate the coverage of your test suite.
+This [http://www.slideshare.net/guest18915c/an-app-in-a-week/ presentation] give a recipe to evaluate the coverage of your test suite. This information is extracted using the [http://nedbatchelder.com/code/modules/coverage.html coverage.py]. I found this [http://garethrees.org/2001/12/04/python-coverage/ page] useful to understand how to use it. 
 
 {{{
 # coverage.py -e
 # coverage.py -x manage.py test survey
 # coverage.py -r -m >report.txt
+}}}
+
+Then you need to analyze the file called "report.txt" and extract the information usefull to your project. In our case all the files located in django-survey :
+{{{
+Name                                                                                                               Stmts   Exec  Cover   Missing
+------------------------------------------------------------------------------------------------------------------------------------------------
+__init__                                                                                                               0      0   100%   
+[...]
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\__init__                                              0      0   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\forms                                               172    117    68%   32, 47-49, 56, 74-86, 96, 107, 117-120, 126-136, 139-145, 147-159, 212, 226-227, 230
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\models                                              157    142    90%   28-29, 70, 82-83, 88-89, 102-104, 109, 126, 159, 211, 236
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\templatetags\__init__                                 0      0   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\templatetags\survey                                  10      7    70%   8, 16-17
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\tests\__init__                                        2      2   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\tests\test_images                                     1      1   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\tests\test_models                                     1      1   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\tests\test_urls                                       1      1   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\urls                                                  6      6   100%   
+c:\yml\_myscript_\dj_things\web_development\django-survey\survey\views                                               183    126    68%   47, 54-65, 79-83, 90, 94, 96, 124-125, 150-151, 157-158, 183-186, 230-231, 246, 261-263, 280-281, 311-313, 328, 341-342, 359-360, 379, 419-425, 444-456, 462-474
+[...]
+manage                                                                                                                13      9    69%   10-13
+management\__init__                                                                                                    0      0   100%   
+settings                                                                                                              31     31   100%   
+urls                                                                                                                   4      4   100%   
+
+
 }}}
