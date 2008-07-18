@@ -1,0 +1,47 @@
+#labels Featured
+#How to run the test suite
+
+= Test in django-survey =
+This reusable app comes with a test suite that is relatively complete. This project uses the regular [http://www.djangoproject.com/documentation/testing/ django test suite]. The test are located inside a folder called "tests". The doctests are spread in 3 files, they name are self explanatory :
+  * test_images.py
+  * test_models.py
+  * test_urls.py
+
+
+== How to run it ==
+If you need a longer explanation on how to run the tests please read the  [http://www.djangoproject.com/documentation/testing/#running-tests django documentation] else the short version is illustrated below.
+
+{{{
+django-survey\examples# manage.py test survey
+
+Creating test database...
+Creating table auth_permission
+Creating table auth_group
+Creating table auth_user
+Creating table auth_message
+Creating table django_site
+Creating table django_content_type
+Creating table django_session
+Creating table django_admin_log
+Creating table survey_survey
+Creating table survey_question
+Creating table survey_choice
+Creating table survey_answer
+Installing index for auth.Permission model
+Installing index for auth.Message model
+Installing index for admin.LogEntry model
+Installing index for survey.Survey model
+Installing index for survey.Question model
+Installing index for survey.Choice model
+Installing index for survey.Answer model
+...
+----------------------------------------------------------------------
+Ran 3 tests in 7.000s
+
+OK
+Destroying test database...
+
+}}}
+
+== TODO ==
+  * Add information on the coverage
