@@ -43,5 +43,11 @@ Destroying test database...
 
 }}}
 
-== TODO ==
-  * Add information on the coverage
+== Coverage ==
+This [http://www.slideshare.net/guest18915c/an-app-in-a-week/ presentation] give a recipe to evaluate the coverage of your test suite.
+
+{{{
+# coverage.py -e
+# coverage.py -x manage.py test survey
+# coverage.py -r -m >report.txt
+}}}
