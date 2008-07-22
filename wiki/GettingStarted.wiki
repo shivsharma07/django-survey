@@ -2,7 +2,7 @@
 #labels Featured
 
 =Pre-requisite=
- You need to run this application using the latest trunk of Django, see: [http://www.djangoproject.com/download/].
+ You need to run this application using the latest trunk of Django, see: [http://www.djangoproject.com/download/]. From revision 81 and above "django-survey" relies on "newforms-admin", this feature has been merged in django's trunk for the milestone called : [http://code.djangoproject.com/milestone/1.0%20alpha 1.0 alpha] 
 
 =Getting django-survey=
  Download the django-survey application by following the SVN checkout instructions: [http://code.google.com/p/django-survey/source/checkout].  The trunk is the main place for checkins.  While it may be occasionally stable, we'll make tags or branches for official snapshots.
